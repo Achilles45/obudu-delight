@@ -1,0 +1,42 @@
+@import url("https://fonts.cdnfonts.com/css/clash-display");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+@import "../assets/variables.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: transparent;
+    color: #000;
+    font-size: 1rem;
+    font-family: "Gordita" !important;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    // font-family: "Gordita Bold" !important;
+    font-family: "Gordita Bold" !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1100px !important;
+    margin: 0 auto;
+}
