@@ -8,6 +8,7 @@ import Services from "@/components/HomeComponents/Services.vue"
 import Export from "@/components/HomeComponents/Export.vue"
 import Helper from "@/components/Shared/Helper.vue"
 import Faqs from "@/components/HomeComponents/Faqs.vue"
+import WhyUs from "@/components/HomeComponents/WhyUs.vue"
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Faqs from "@/components/HomeComponents/Faqs.vue"
     <Services />
     <Export />
     <Faqs />
+    <WhyUs />
     <Helper />
   </div>
 </template>

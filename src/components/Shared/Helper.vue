@@ -10,7 +10,7 @@
                 <div class="helper__content__text">
                    <div>
                     <h4>You've seen all the processes and it's so simple and seamless. Start your agro allied project with us today!</h4>
-                    <router-link to="">Request A Service &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
+                    <router-link to="">Request A Service Today &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
                    </div>
                 </div>
             </div>
