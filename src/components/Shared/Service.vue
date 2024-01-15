@@ -10,7 +10,7 @@ const props = defineProps(["title","content"])
        <div class="service__body">
         <h4>{{ title }}</h4>
         <p>{{ content }}</p>
-        <router-link to="">Request Service Today &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
+        <router-link to="">Request Service &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
        </div>
     </div>
 </template>
@@ -18,7 +18,7 @@ const props = defineProps(["title","content"])
 <style lang="scss" scoped>
     .service{
         background: rgba(5, 50, 50, 0.4);
-        min-width: 350px;
+        min-width: 300px;
         margin: 0 10px;
         color: #fff;
         border-top-left-radius: 20px;
@@ -36,19 +36,20 @@ const props = defineProps(["title","content"])
         }
 
         &__body{
-            padding: 2rem;
+            padding: 2rem 1.5rem; 
             padding-bottom: 2.7rem;
             h4{
-                line-height: 1.4;
+                line-height: 1.6;
                 padding-bottom: .5rem;
-                font-family: "Montserrat" !important;
+                // font-family: "Montserrat" !important;
                 // font-weight: bold;
+                font-size: 1.25rem;
                 text-transform: capitalize;
             }
             p{
                 line-height: 2;
                 opacity: .7;
-                font-size: .95rem;
+                font-size: .9rem;
                 padding-bottom: 1.5rem;
             }
             a{

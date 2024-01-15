@@ -9,7 +9,7 @@
                 <img class="helper__content__img" src="../../assets/images/stroke.webp" alt="">
                 <div class="helper__content__text">
                    <div>
-                    <h4>You've seen all the processes and it's so simple and seamless. Start your agro allied project with us today!</h4>
+                    <h3>You've seen all the processes and it's so simple and seamless. Start your agro allied project with us today!</h3>
                     <router-link to="">Request A Service Today &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
                    </div>
                 </div>
@@ -41,14 +41,18 @@
         }
 
         &__text{
-            display: grid;
-            grid-template-columns: 500px 1fr;
-            padding-bottom: 3rem;
-            h4{
+            // display: grid;
+            // // grid-template-columns: 500px 1fr;
+            // padding-bottom: 3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 4rem;
+            h3{
                 // @include section__header__text;
                 color: #FFF;
-                padding-bottom: 2.5rem;
-                padding-top: 2rem;
+                padding-bottom: 3.5rem;
+                padding-top: 3rem;
                 opacity: .9;
                 line-height: 1.7;
             }

@@ -6,7 +6,7 @@ import MetaInfo from "./MetaInfo.vue";
     <div class="hero">
         <div class="container">
             <div class="hero__text">
-                <h1>Onboarding you to <span>Agro Trade Opportunities</span> Globally</h1>
+                <h1>Access <span>Agro Trade Opportunities</span> Globally</h1>
                 <p>Unlocking massive opportunities for growth and value generation in the agricultural industry. We simply provide you with the tools, techniques and know-how to flourish.</p>
                 <div class="hero__text__patterns">
                     <img src="../../assets/images/stroke.webp" alt="">
@@ -37,13 +37,14 @@ import MetaInfo from "./MetaInfo.vue";
 <style lang="scss" scoped>
 // @import url("https://fonts.cdnfonts.com/css/clash-display");
 @import "../../assets/variables";
+@import "../../assets/variables.scss";
     .hero{
         // height: 100vh;
         padding-top: 15rem;
         margin-bottom: 0rem;
 
         &__text{
-            max-width: 1000px;
+            max-width: 950px;
             margin: 0 auto;
             text-align: center;
             padding-bottom: 3rem;
@@ -62,6 +63,7 @@ import MetaInfo from "./MetaInfo.vue";
                 line-height: 1.3;
                 color: $primary-color;
                 text-transform: capitalize;
+                font-family: "Gordita Bolder" !important;
 
                 span{
                     color: #35A162;

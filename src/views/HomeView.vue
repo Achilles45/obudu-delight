@@ -9,6 +9,7 @@ import Export from "@/components/HomeComponents/Export.vue"
 import Helper from "@/components/Shared/Helper.vue"
 import Faqs from "@/components/HomeComponents/Faqs.vue"
 import WhyUs from "@/components/HomeComponents/WhyUs.vue"
+import Footer from "@/components/Shared/Footer.vue"
 </script>
 
 <template>
@@ -21,5 +22,6 @@ import WhyUs from "@/components/HomeComponents/WhyUs.vue"
     <Faqs />
     <WhyUs />
     <Helper />
+    <Footer />
   </div>
 </template>

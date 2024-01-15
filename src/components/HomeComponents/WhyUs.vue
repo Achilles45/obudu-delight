@@ -49,7 +49,7 @@
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
     .why__us{
-        margin-bottom: 10rem !important;
+        margin-bottom: 6rem !important;
 
         &__header{
             text-align: center;
