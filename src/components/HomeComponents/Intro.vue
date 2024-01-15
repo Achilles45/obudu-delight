@@ -112,13 +112,49 @@ import WhyCard from '../Shared/WhyCard.vue';
   }
 }
 
-@keyframes scroll2 {
-  0%{
-    transform: translateX(calc(-250px * 3));
+   // Media Queries - Phone 
+   @media only screen and (max-width: 900px){
+        @keyframes scroll {
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(calc(-200px * 3));
+      }
   }
-  100%{
-    transform: translateX(0);
-  }
+
+   }
 }
-}
+
+
+   // Media Queries - Phone 
+   @media only screen and (max-width: 900px){
+    .why{
+      padding-top: 0;
+      padding-bottom: .5rem;
+      &__text{
+        max-width: 100% !important;
+
+        h3{
+          font-size: 1.2rem;
+          line-height: 1.9;
+          padding-bottom: 1rem;
+          padding-top: 4rem;
+        }
+      }
+
+      &__slider{
+        width: auto;
+        padding-left: 1rem;
+
+        &__track{
+          width: calc(230px * 4);
+
+          &__slide{
+            animation-duration: 10s;
+          }
+        }
+      }
+    }
+   }
 </style>

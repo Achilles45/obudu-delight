@@ -10,7 +10,7 @@
                 <div class="helper__content__text">
                    <div>
                     <h4>You've seen all the processes and it's so simple and seamless. Start your agro allied project with us today!</h4>
-                    <router-link to="">Request A Service</router-link>
+                    <router-link to="">Request A Service &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
                    </div>
                 </div>
             </div>
@@ -70,5 +70,24 @@
             }
         }
     }
+    }
+
+
+    // Media Queries - Phone 
+    @media only screen and (max-width: 900px) {
+        .helper {
+            &__content{
+                &__text{
+                    display: flex;
+                    flex-direction: column;
+
+                    h4{
+                        font-size: 1.3rem;
+                        line-height: 2;
+                    }
+
+                }
+            }
+        }
     }
 </style>

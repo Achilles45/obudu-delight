@@ -1,4 +1,13 @@
 <script setup>
+import { ref } from "vue"
+const menu = document.getElementById("menu")
+
+const isNavbarActive = ref(true)
+
+const toggleNavbar = () => {
+    isNavbarActive.value = !isNavbarActive.value;
+}
+
 </script>
 
 <template>
@@ -6,16 +15,20 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__content__left">
-                    <router-link to="/"><span>Obudu Delight</span></router-link>
+                    <a href=""><img src="../../assets/images/logo.png" alt=""></a>
                 </div>
-                <div class="header__content__right">
-                    <ul class="header__content__right__content">
-                        <li><router-link to="/">Home</router-link></li>
-                        <li><router-link to="/">About Us</router-link></li>
-                        <li><router-link to="/">Our Products</router-link></li>
-                        <li><router-link to="/">Our Services</router-link></li>
-                        <li class="header__content__right__content--quote"><router-link to="/">Request A Quote Today</router-link></li>
+                <div :class=" isNavbarActive ? 'header__content__right' : 'mobile' ">
+                    <ul @click="toggleNavbar" class="header__content__right__content">
+                        <li><a href="#" >Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li class="header__content__right__content--quote"><a href="/">Request A Quote Today</a></li>
                     </ul>
+                </div>
+                <div @click="toggleNavbar" id="menu" class="header__content__menu">
+                    <font-awesome-icon v-if="isNavbarActive" style="font-size: 1.4rem; color: #042727;" :icon="['fas', 'bars']" />
+                    <font-awesome-icon v-if="!isNavbarActive" style="font-size: 1.4rem; color: #042727;" :icon="['fas', 'xmark']" />
                 </div>
             </div>
         </div>
@@ -25,25 +38,33 @@
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
     .header{
-        padding: .7rem 0;
+        // padding: .7rem 0;
+        // height: 7rem;
+        // height: auto;
         position: fixed;
         left: 0;
         right: 0;
         z-index: 999 !important;
         background: #FFF;
+        // background: red;
 
         &__content{
             display: flex;
             justify-content: space-between;
-            padding-top: 1.1rem;
+            align-items: center;
+            // padding-top: 1rem;
 
             &__left{
-                span {
-                    font-weight: bold;
+                // display: flex;
+                // align-items: center;
+                
+                img {
+                    max-width: 200px;
                 }
             }
 
             &__right{
+                padding-top: 1rem;
                 &__content{
                     display: flex;
                     align-items: center;
@@ -64,6 +85,80 @@
                     }
                 }
             }
+
+            &__menu{
+                // background: orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                display: none;
+                padding-right: 1rem;
+            }
+        }
+    }
+
+
+    // Media Queries - Phone 
+    @media only screen and (max-width: 900px){
+        .header {
+            position: fixed;
+            // background: red;
+            // height: 4rem;
+            // padding: 1rem 1rem;
+            // background: red;
+
+            &__content{
+                // padding-top: 1rem;
+
+                &__left{
+                    img{
+                        max-width: 150px;
+                        height: auto;
+                    }
+                }
+                &__right {
+                    position: absolute;
+                    top: 105rem !important;
+                    right: 0;
+                    left: 0;
+                    height: 100vh;
+                    // width: 50%;
+                    // width: 50%;
+                    width: 100%;
+                    display: none;
+                   
+                    &__content{
+                        background: $primary-color;
+                        color: #FFF;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        height: 100%;
+                        padding-top: 6rem;
+                        transition: all ease-in .5s;
+
+                        a{
+                            color: #FFF !important;
+                        }
+                    }
+                }
+                &__menu{
+                    display: block;
+                    // padding-right: 9.5rem;
+                }
+            }
+        }
+
+        .mobile{
+            position: absolute;
+            top: 6rem;
+            right: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            display: block;
         }
     }
 </style>

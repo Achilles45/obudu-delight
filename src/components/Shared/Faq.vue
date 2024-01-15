@@ -14,7 +14,8 @@
 
 <template>
     <div @click="toggleIsActive(item, item.isActive)" class="faq">
-        <div class="faq__plus"><font-awesome-icon :icon="['fas', 'plus']" style="color: #FFF" /></div>
+        <div v-if="!isItemActive" class="faq__plus"><font-awesome-icon :icon="['fas', 'angle-down']" /></div>
+        <div v-if="isItemActive" class="faq__plus"><font-awesome-icon :icon="['fas', 'angle-up']" /></div>
         <div class="faq__content">
             <div class="faq__content__question">
                 <h5>{{ item.question }}</h5>
@@ -66,6 +67,20 @@
             line-height: 2;
             color: #FFF;
             padding-top: .6rem;
+        }
+    }
+
+
+    @media only screen and (max-width: 900px){
+        .faq{
+            &__plus{
+                right: .5rem;
+                background: transparent;
+                color: $secondary-color !important;
+            }
+            h5{
+                line-height: 1.5;
+            }
         }
     }
 </style>

@@ -166,4 +166,45 @@
         }
         }
     }
+
+
+    @media only screen and (max-width: 900px){
+        .export{
+
+            &__header{
+                max-width: 100%;
+                padding-top: 0;
+
+                h1{
+                    font-size: 1.5rem;
+                    line-height: 1.4;
+                    padding-top: .5rem;
+                }
+
+                p{
+                    max-width: 100%;
+                    font-size: 1rem;
+                }
+            }
+
+            &__content{
+                &__grid{
+                    grid-row-gap: 0px;
+
+                    &__item{
+                        padding-bottom: 0;
+                        &__iconholder{
+                            &__icon{
+                                height: 3rem;
+                                width: 3rem;
+                            }
+                            &--span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 </style>

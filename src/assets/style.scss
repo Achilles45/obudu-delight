@@ -15,6 +15,7 @@ body{
     font-size: 1rem;
     font-family: "Gordita" !important;
     font-weight: 400;
+    overflow-x: hidden !important;
 }
 
 h1,
@@ -40,3 +41,12 @@ ul li{
     max-width: 1100px !important;
     margin: 0 auto;
 }
+
+   // Media Queries - Phone 
+   @media only screen and (max-width: 900px){
+    .container{
+        max-width: 750px !important;
+        margin: 0 auto;
+        padding: 0 1.5rem !important;
+    }
+   }

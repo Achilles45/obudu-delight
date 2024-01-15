@@ -77,4 +77,24 @@
             }
         }
     }
+
+
+    @media only screen and (max-width: 900px){
+        .faqs{
+            &__content{
+                display: flex;
+                flex-direction: column;
+                padding-top: 1rem;
+
+                h1{
+                    font-size: 1.7rem;
+                    line-height: 1.6;
+                }
+
+                &__right{
+                    padding-top: 0rem;
+                }
+            }
+        }
+    }
 </style>

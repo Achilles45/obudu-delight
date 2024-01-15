@@ -3,7 +3,7 @@ import Service from "../Shared/Service.vue";
 </script>
 
 <template>
-    <div class="services">
+    <div id="services" class="services">
         <div class="container">
             <div class="services__header">
                 <h1>We're your partner of choice to help you build a successful <span> agro business with our tools & techniques </span> at your fingertips.</h1> 
@@ -35,8 +35,9 @@ import Service from "../Shared/Service.vue";
 @import "../../assets/variables.scss";
     .services{
         background: $primary-color;
-        padding: 5rem 0;
+        // margin-top: 5rem;
         color: #FFF;
+        padding: 5rem 0;
 
         &__header{
             max-width: 1050px;
@@ -62,4 +63,22 @@ import Service from "../Shared/Service.vue";
             display: none;
         }
     }
+
+
+   // Media Queries - Phone 
+   @media only screen and (max-width: 900px){
+    .services{
+        padding: 3rem 0;
+        margin-top: 1rem;
+        &__header{
+            max-width: 100%;
+
+            h1{
+                font-size: 1.7rem;
+                line-height: 1.8;
+                padding-top: 1rem;
+            }
+        }
+    }
+   }
 </style>

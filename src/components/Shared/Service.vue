@@ -59,4 +59,17 @@ const props = defineProps(["title","content"])
             }
         }
     }
+
+       // Media Queries - Phone 
+   @media only screen and (max-width: 900px){
+    .service{
+        min-width: 320px;
+
+        &__body{
+            padding: 2rem 1.5rem;
+            padding-bottom: 3rem;
+        }
+    }
+   }
+   
 </style>

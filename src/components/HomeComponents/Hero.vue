@@ -39,7 +39,7 @@ import MetaInfo from "./MetaInfo.vue";
 @import "../../assets/variables";
     .hero{
         // height: 100vh;
-        padding-top: 12rem;
+        padding-top: 15rem;
         margin-bottom: 0rem;
 
         &__text{
@@ -66,7 +66,6 @@ import MetaInfo from "./MetaInfo.vue";
                 span{
                     color: #35A162;
                     font-weight: bold;
-                    text-transform: ital;
                 }
             }
 
@@ -156,4 +155,50 @@ import MetaInfo from "./MetaInfo.vue";
             }
         }
     }
+
+       // Media Queries - Phone 
+       @media only screen and (max-width: 900px){
+        .hero{
+            padding-top: 10rem;
+            &__text{
+                
+                h1{
+                    font-size: 1.6rem;
+                    line-height: 1.6;
+                }
+
+                p{
+                    max-width: 100%;
+                    font-size: .9rem;
+                }
+
+                &__buttons{
+                    flex-direction: column;
+
+                    &--learn{
+                        display: none;
+                        padding: 1.2rem 4rem;;
+                    }
+                }
+                &__patterns{
+                    display: none;
+                }
+            }
+
+            &__bottom{
+                display: flex;
+                flex-direction: column;
+
+                &__metainfo{
+                    &--top{
+                        h5{
+                            padding-bottom: 2rem;
+                            font-size: .9rem;
+                            opacity: .9;
+                        }
+                    }
+                }
+            }
+        }
+       }
 </style>
