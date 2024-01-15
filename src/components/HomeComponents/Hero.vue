@@ -165,7 +165,7 @@ import MetaInfo from "./MetaInfo.vue";
             &__text{
                 
                 h1{
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     line-height: 1.6;
                 }
 

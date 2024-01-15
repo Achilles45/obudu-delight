@@ -81,6 +81,7 @@
     @media only screen and (max-width: 900px) {
         .helper {
             &__content{
+                padding: 2rem 2rem;
                 &__text{
                     display: flex;
                     flex-direction: column;

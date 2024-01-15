@@ -81,6 +81,10 @@
             h5{
                 line-height: 1.5;
             }
+
+            p{
+                font-size: .9rem;
+            }
         }
     }
 </style>

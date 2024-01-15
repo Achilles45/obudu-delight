@@ -15,13 +15,13 @@ const toggleNavbar = () => {
         <div class="container">
             <div class="header__content">
                 <div class="header__content__left">
-                    <a href=""><img src="../../assets/images/logo.png" alt=""></a>
+                    <a href="/"><img src="../../assets/images/logo.png" alt=""></a>
                 </div>
                 <div :class=" isNavbarActive ? 'header__content__right' : 'mobile' ">
                     <ul @click="toggleNavbar" class="header__content__right__content">
-                        <li><a href="#" >Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="/products">Our Products</a></li>
                         <li><a href="#services">Our Services</a></li>
                         <li class="header__content__right__content--quote"><a href="/">Request A Quote Today</a></li>
                     </ul>
