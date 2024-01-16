@@ -115,7 +115,7 @@
                 max-width: 100%;
 
                 h1{
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     padding-top: 0;
                     padding-bottom: .5rem;
                 }
