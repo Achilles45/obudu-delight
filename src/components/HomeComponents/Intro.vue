@@ -6,7 +6,7 @@ import WhyCard from '../Shared/WhyCard.vue';
     <div class="why">
         <div class="container">
             <div class="why__text">
-                <h3>We buy, sell and deliver agro allied products to our customers around the world. Also access modern technologies and know-how while setting up your farm. </h3>
+                <h1>We buy, sell and deliver agro allied products to our customers around the world. Also <span>access modern technologies and know-how while setting up your farm. </span></h1>
             </div>
 
             <div class="why__slider">
@@ -43,15 +43,16 @@ import WhyCard from '../Shared/WhyCard.vue';
   // padding: 2rem 7.2rem;
 
   &__text {
-    max-width: 70%;
+    max-width: 100%;
     // padding-bottom: 3rem;
-    h3 {
-      line-height: 1.7;
-      padding-top: 2rem;
-      font-weight: bold !important;
-      color: $primary-color;
-      font-size: 1.6rem;
-      padding-bottom: 0;
+    h1{
+      font-size: 2.7rem;
+      line-height: 1.6;
+      color: #000;
+
+      span{
+        opacity: .5;
+      }
     }
   }
 

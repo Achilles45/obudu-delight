@@ -7,13 +7,13 @@ import MetaInfo from "./MetaInfo.vue";
         <div class="container">
             <div class="hero__text">
                 <h1>Access <span>Agro Trade Opportunities</span> Globally</h1>
-                <p>Unlocking massive opportunities for growth and value generation in the agricultural industry. We simply provide you with the tools, techniques and know-how to flourish.</p>
+                <p>At the heart of Obudu, Obudu Delight is unlocking massive opportunities for growth and value generation in the agricultural industry. We simply provide you with the products, tools, techniques, and know-how to flourish in the agrospace.</p>
                 <div class="hero__text__patterns">
                     <img src="../../assets/images/stroke.webp" alt="">
                 </div>
                 <div class="hero__text__buttons">
-                    <router-link to="" class="hero__text__buttons--request">Request A service Today &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></router-link>
-                    <router-link to="" class="hero__text__buttons--learn">Contact Sales</router-link>
+                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6" class="hero__text__buttons--request">Request A service Today &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></a>
+                    <router-link to="/contact" class="hero__text__buttons--learn">Contact Sales</router-link>
                 </div>
             </div>
             <div class="hero__bottom">
