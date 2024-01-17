@@ -5,10 +5,13 @@
     import Helper from '@/components/Shared/Helper.vue';
     import Footer from '@/components/Shared/Footer.vue';
 
+
     const getImgUrl = (pet) => {
     var images = require.context('../assets/', false, /\.png$/)
     return images('./' + pet + ".png")
   }
+
+
 </script>
 
 <template>
@@ -46,7 +49,7 @@
 
                             <div class="products__content__grid__item">
                                 <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/product-melon-seed-oil.jpg" alt="Groundnut">
+                                    <img src="../assets/images/melon-seed-oil.png" alt="Groundnut">
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Melon Seed Oil</h5>
@@ -57,7 +60,7 @@
 
                             <div class="products__content__grid__item">
                                 <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/product-melon-seeds1.jpg" alt="Groundnut">
+                                    <img src="../assets/images/mellon-seeds.png" alt="Groundnut">
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Melon Seeds</h5>
@@ -68,7 +71,7 @@
 
                             <div class="products__content__grid__item">
                                 <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/product-sesame-seed-1.jpg" alt="Groundnut">
+                                    <img src="../assets/images/sesame-seed.png" alt="Groundnut">
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Sesame Seed</h5>
@@ -79,7 +82,7 @@
 
                             <div class="products__content__grid__item">
                                 <div class="products__content__grid__item--header">
-                                    <img class="products__content__grid__item--header--oilimg" src="../assets/images/product-sesame-seed-oil.jpg" alt="Groundnut">
+                                    <img class="products__content__grid__item--header--oilimg" src="../assets/images/slider-image1.jpg" alt="Groundnut">
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Sesame Seed Oil</h5>
@@ -131,12 +134,12 @@
 
             &__item{
                 text-align: center;
-                &--header{
-                    &--oilimg{
-                        max-width: 350px !important;
-                        height: 230px !important; 
-                    }
-                }
+                // &--header{
+                //     &--oilimg{
+                //         max-width: 350px !important;
+                //         height: 230px !important; 
+                //     }
+                // }
                 img{
                     max-width: 300px;
                     height: 100%;
