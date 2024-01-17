@@ -1,5 +1,28 @@
 <script setup>
 import MetaInfo from "./MetaInfo.vue";
+
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
+const getImageUrl = (img) => {
+  // This path must be correct for your file
+  return new URL(`../../assets/images/${img}`, import.meta.url);
+}
+
+const img1 = getImageUrl("slider-groundnut-seeds.jpg")
+const img2 = getImageUrl("slider-hydroponics.jpg")
+const img3 = getImageUrl("slider-image0.jpg")
+const img4 = getImageUrl("slider-image1.jpg")
+const img5 = getImageUrl("slider-image2.jpg")
+const img6 = getImageUrl("slider-image3.jpg")
+// const img7 = getImageUrl("slider-image4.jpg")
+
+const images = [img1, img2, img3, img4, img5, img6]
+
+const sliders = [
+    getImageUrl("../../assets/images/consulting.jpg",)
+]
+
 </script>
 
 <template>
@@ -27,7 +50,17 @@ import MetaInfo from "./MetaInfo.vue";
                 </div>
                 <div class="hero__bottom__content">
                     <div class="hero__bottom__content--overlay"></div>
-                    <img class="hero__bottom__content--img" src="../../assets/images/banner.jpeg" alt="">
+                    <!-- <img class="hero__bottom__content--img" src="../../assets/images/banner.jpeg" alt=""> -->
+                    <carousel :autoplay="2000" :wrap-around="true" :items-to-show="1.5">
+                        <slide v-for="slider in images" :key="slider">
+                        <img :src="slider" alt="">
+                        </slide>
+
+                        <template #addons>
+                        <!-- <navigation /> -->
+                        <pagination />
+                        </template>
+                    </carousel>
                 </div>
             </div>
         </div>
@@ -35,12 +68,13 @@ import MetaInfo from "./MetaInfo.vue";
 </template>
 
 <style lang="scss" scoped>
+@import 'vue3-carousel/dist/carousel.css';
 // @import url("https://fonts.cdnfonts.com/css/clash-display");
 @import "../../assets/variables";
 @import "../../assets/variables.scss";
     .hero{
         // height: 100vh;
-        padding-top: 15rem;
+        padding-top: 12rem;
         margin-bottom: 0rem;
 
         &__text{
@@ -53,7 +87,7 @@ import MetaInfo from "./MetaInfo.vue";
             &__patterns{
                 position: absolute;
                 top: 6rem;
-                // left: -2rem;
+                left: -2rem;
             }
 
             h1{
@@ -72,7 +106,7 @@ import MetaInfo from "./MetaInfo.vue";
             }
 
             p{
-                max-width: 70%;
+                max-width: 95%;
                 margin: 0 auto;
                 padding-top: 1rem;
                 line-height: 2;
@@ -117,12 +151,14 @@ import MetaInfo from "./MetaInfo.vue";
                 background: linear-gradient(to right, rgba(4,39,39, .96), rgba(4,39,39, .96)), url("../../assets/images/waves.svg");
                 background-position: center;
                 background-size: cover;
-                padding: 2rem;
+                padding: 1rem 2rem;
                 border-radius: 10px;
                 color: #FFF;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
+                height: 305px;
+                margin-top: 1rem;
 
                 &--top{
                     h5{
@@ -139,19 +175,30 @@ import MetaInfo from "./MetaInfo.vue";
             }
             &__content{
                 position: relative;
+                // background: red;
+                // overflow-x: scroll;
+                width: 700px;
+                padding-top: 1rem;
 
-                &--img{
-                    width: 100%;
-                    max-height: 300px;
+                img{
+                    width: 450px;
+                    // max-height: 400px;
                     border-radius: 10px;
                 }
 
+                // &--img{
+                //     width: 100%;
+                //     max-height: 300px;
+                //     border-radius: 10px;
+                // }
+
                 &--overlay{
-                    background: linear-gradient(to right, rgba(4,39,39, .1), rgba(0,0,0,.2));
+                    // background: linear-gradient(to right, rgba(4,39,39, .1), rgba(0,0,0,.2));
                     height: 100%;
                     width: 100%;
                     position: absolute;
                     border-radius: 10px;
+                    padding-top: 1rem;
                     // z-index: 999 !important;
                 }
             }
@@ -192,12 +239,25 @@ import MetaInfo from "./MetaInfo.vue";
                 flex-direction: column;
 
                 &__metainfo{
+                    height: 180px !important;
+                    padding: 1.2rem 1.2rem !important;
                     &--top{
                         h5{
                             padding-bottom: 2rem;
                             font-size: .9rem;
                             opacity: .9;
                         }
+                    }
+                }
+
+                &__content{
+                    max-width: 490px !important;
+                    width: 100%;
+                    overflow-y: hidden !important;
+                    overflow-x: hidden !important;
+
+                    img{
+                        width: 230px;
                     }
                 }
             }

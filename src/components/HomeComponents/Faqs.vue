@@ -10,7 +10,7 @@
         {
             id: 2,
             question: "Can I get a refund after payment?",
-            answer: "If not satisfied with any of our services or products, you can request for a refund and it will be processed according to our terms and conditions as stated earlier.",
+            answer: "If not satisfied with any of our services or products, you can request for a refund and it will be processed according to our terms and conditions.",
             isActive: false
         },
         {
@@ -27,7 +27,7 @@
         // },
         {
             id: 5,
-            question: "How does it take to setup a greenhouse farm",
+            question: "How long does it take to setup a greenhouse farm",
             answer: "The complete setup time depends on the size and availability of resources to work with.",
             isActive: false
         }

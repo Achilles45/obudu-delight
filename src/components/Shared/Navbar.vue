@@ -22,7 +22,7 @@ const toggleNavbar = () => {
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/products">Our Products</a></li>
-                        <li><a href="#services">Our Services</a></li>
+                        <!-- <li><a href="#services">Our Services</a></li> -->
                         <li class="header__content__right__content--quote"><a href="/contact">Contact Us Today</a></li>
                     </ul>
                 </div>
@@ -93,7 +93,7 @@ const toggleNavbar = () => {
                 justify-content: center;
                 cursor: pointer;
                 display: none;
-                padding-right: 1rem;
+                // padding-right: 6rem;
             }
         }
     }

@@ -12,7 +12,7 @@
     <div class="about">
       <PageIntro 
         title="About Us"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatem."
+        description="Unleashing through exports to the rest of the world the potential of agriculture in Africa with technology, ensuring that all exports and products meet global standards, and maintaining the natural freshness."
       />
     </div>
     <div class="container">

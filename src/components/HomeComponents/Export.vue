@@ -7,11 +7,11 @@
         <div class="container">
             <div class="export__header">
                 <div class="export__header__heading">
-                    <h1>Sales and export of sesame seeds anywhere around the globe</h1>
+                    <h1>Sales and export of agro allied products anywhere around the globe</h1>
                 </div>
                 <div class="export__header__intro">
                     <p>We specializes in the sale of qulaity sesame seed at a very competitive rate and export to all our customers anywhere around the globe.</p>
-                    <a>Order Sesame Seed &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></a>
+                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6">Order Agro Allied Products &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></a>
                 </div>
             </div>
             <div class="export__content">
@@ -33,7 +33,7 @@
                                 </span>
                                 <div class="export__content__grid__item__iconholder--span"></div>
                             </div>
-                            <h6>Make Payment</h6>
+                            <h6>Confirm and Make Payment</h6>
                             <p>Proceed to make payment to confirm your order and details of the shipping plan will be sent to you.</p>
                         </div>
                         <div class="export__content__grid__item"> 
@@ -69,7 +69,7 @@
         padding: 3rem 0;
 
         &__header{
-            max-width: 720px;
+            max-width: 750px;
             // display: grid;
             // grid-template-columns: 1fr 410px;
             // grid-gap: 50px;

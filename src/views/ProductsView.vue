@@ -27,7 +27,7 @@
                 <div class="products__content">
                    <div class="products__content__text">
                         <h2>Order Quality Agro Products Today</h2>
-                        <p>You can now order and get your quality agro products delivered to you. We sell on qulaity and our customers can testify</p>
+                        <p>You can now order and get your quality agro products delivered to you. We sell only quality products and our customers can testify</p>
                    </div>
                     <div class="products__content__grid">
                         <!-- <ProductCard 
@@ -42,30 +42,8 @@
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Sesame Seed</h5>
-                                    <p>LWe process and export the very best of sesame from Nigeria across Europe.</p>
-                                    <button>Order Now</button>
-                                </div>
-                            </div>
-
-                            <div class="products__content__grid__item">
-                                <div class="products__content__grid__item--header">
-                                    <img class="products__content__grid__item--header--oilimg" src="../assets/images/slider-image1.jpg" alt="Groundnut">
-                                </div>
-                                <div class="products__content__grid__item--body">
-                                    <h5>Sesame Seed Oil</h5>
-                                    <p>Quality factory processing and export of Sesame seed oil across America and europe</p>
-                                    <button>Order Now</button>
-                                </div>
-                            </div>
-
-                            <div class="products__content__grid__item">
-                                <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/melon-seed-oil.png" alt="Groundnut">
-                                </div>
-                                <div class="products__content__grid__item--body">
-                                    <h5>Melon Seed Oil</h5>
-                                    <p>We export fresh melon seed oil across Europe.</p>
-                                    <button>Order Now</button>
+                                    <p>We process and export the very best of sesame from Nigeria across Europe.</p>
+                                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6">Order Now</a>
                                 </div>
                             </div>
 
@@ -76,7 +54,29 @@
                                 <div class="products__content__grid__item--body">
                                     <h5>Groundnut</h5>
                                     <p>We export quality goudnuts across Europe in its raw form.</p>
-                                    <button>Order Now</button>
+                                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6">Order Now</a>
+                                </div>
+                            </div>
+
+                            <div class="products__content__grid__item">
+                                <div class="products__content__grid__item--header">
+                                    <img src="../assets/images/melon-seed-oil.png" alt="Groundnut">
+                                </div>
+                                <div class="products__content__grid__item--body">
+                                    <h5>Melon Seed Oil</h5>
+                                    <p>We export fresh melon seed oil across Europe from the heart of Obudu.</p>
+                                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6">Order Now</a>
+                                </div>
+                            </div>
+
+                            <div class="products__content__grid__item">
+                                <div class="products__content__grid__item--header">
+                                    <img class="products__content__grid__item--header--oilimg" src="../assets/images/slider-image1.jpg" alt="Groundnut">
+                                </div>
+                                <div class="products__content__grid__item--body">
+                                    <h5>Sesame Seed Oil</h5>
+                                    <p>Quality factory processing and export of Sesame seed oil across America and europe</p>
+                                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6">Order Now</a>
                                 </div>
                             </div>
 
@@ -87,7 +87,7 @@
                                 <div class="products__content__grid__item--body">
                                     <h5>Melon Seeds</h5>
                                     <p>We export melon seeds, in whatever quantity, to america and Europe</p>
-                                    <button>Order Now</button>
+                                    <a target="_blank" href="https://forms.gle/cvcxfrKCwhBqTJgS6">Order Now</a>
                                 </div>
                             </div>
                     </div>
@@ -156,15 +156,15 @@
                         line-height: 1.7;
                         padding-bottom: 1rem;
                     }
-                    button{
+                    a{
                         background: $secondary-color;
-                        color: #FFF;
-                        padding: .7rem 2rem;
+                        color: #FFF !important;
+                        padding: 1rem 2.5rem;
                         border-radius: 4px;
                         border: none;
                         transition: all ease-in .5s;
                     }
-                    button:hover{
+                    a:hover{
                         background: $primary-color;
                     }
                 }
@@ -196,7 +196,7 @@
                         }
 
                         &--body{
-                            button{
+                            a{
                                 margin-bottom: 2rem;
                             }
                         }

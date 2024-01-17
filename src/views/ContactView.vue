@@ -16,19 +16,20 @@
                 <div class="contact__content__item">
                     <img src="../assets/images/google-maps.png" alt="">
                     <h5>Contact Office</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, vel.</p>
+                    <p>60 Ranch Road, Obudu, Cross River State. Nigeria</p>
                 </div>
 
                 <div class="contact__content__item">
-                    <img src="../assets/images/google-maps.png" alt="">
+                    <img src="../assets/images/tick.png" alt="">
                     <h5>Email Address</h5>
-                    <p>support@obududelight.com</p>
+                    <p>sales@obududelight.com</p>
                 </div>
 
                 <div class="contact__content__item">
-                    <img src="../assets/images/google-maps.png" alt="">
+                    <img src="../assets/images/call.png" alt="">
                     <h5>Phone</h5>
-                    <p>+234 810 0351 5205</p>
+                    <a href="tel:+2348136287422">+234 813 628 7422</a><br>
+                    <a href="tel:+44 7522546504">+44 752 254 6504</a>
                 </div>
             </div>
         </div>

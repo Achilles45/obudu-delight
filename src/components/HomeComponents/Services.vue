@@ -12,18 +12,22 @@ import Service from "../Shared/Service.vue";
                 <Service 
                     title="Export/import of agro related products" 
                     content="We facilitate import and export of agro related products at competitive pricing and get products shipped anywhere around the globe." 
+                    imageFileName="services-exportation.jpg"
                 />
                 <Service 
                     title="Complete Farm Setup" 
                     content="Our team of experts can help you do the dirty work of setting up your farm while you get reports. From soil analysis to surverys, our team follows best pratices to provide quality services." 
+                    imageFileName="slider-image3.jpg"
                 />
                 <Service 
                     title="Greenhouse Farming" 
                     content="Technology is at the core of our services. We set up greenhouse farms and technologies for businesses and individuals to facilitate healthier food production and profit maximization." 
+                    imageFileName="greenhouse.jpg"
                 />
                 <Service 
                     title="Genral Consulting" 
                     content="Our team is always ready to help you in any area of agriculture. With years of experience, we advice you on best practices for effective service delivery and profit maximization." 
+                    imageFileName="consulting.jpg"
                 />
             </div>
         </div>

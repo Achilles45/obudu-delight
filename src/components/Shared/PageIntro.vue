@@ -11,9 +11,9 @@
                     <p>{{ props.description }}</p>
                     <a href="/products">See Our Products &nbsp; <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></a>
                 </div>
-                <div class="page_intro__content__right">
-                    <img src="../../assets/images/hand.svg" alt="">
-                </div>
+                <!-- <div class="page_intro__content__right">
+                    <img src="../../assets/images/slider-hydroponics.jpg" alt="">
+                </div> -->
             </div>
         </div>
     </div>
@@ -24,10 +24,14 @@
     .page_intro{
         // background: #F8FAFC;
         background: #EFF9EF;
+        // background: linear-gradient(to right, rgba(0,0,0, .55), rgba(0,0,0, .7)), url("../../assets/images/slider-hydroponics.jpg");
+        // background-size: cover;
+        // background-position: center;
         border-radius: 10px;
+        // color: #FFF;
         &__content{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 800px 1fr;
             grid-gap: 60px;
             padding: 6rem 3rem;
             position: relative;
@@ -52,9 +56,10 @@
                 }
 
                 p{
-                    font-size: 1rem;
+                    color: $primary-color;
+                    font-size: 1.05rem;
                     opacity: .9;
-                    line-height: 1.7;
+                    line-height: 1.95;
                     padding-bottom: 1.5rem;
                     padding-top: .5rem;
                 }

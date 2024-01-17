@@ -11,9 +11,9 @@
                     <div class="new__footer__content__links__item">
                         <h5>Obudu Delight</h5>
                         <ul>
-                            <a href="#">Our Products</a>
-                            <a href="/">Our Services</a>
-                            <a href="/">About Us</a>
+                            <a href="/products">Our Products</a>
+                            <a href="#services">Our Services</a>
+                            <a href="/about">About Us</a>
                         </ul>
                     </div>
                     <div class="new__footer__content__links__item">
@@ -28,13 +28,14 @@
                         <h5>Contact</h5>
                         <ul>
                             <a href="mailto: support@obududelight.com">support@obududelight.com</a>
-                            <a href="tel:+000000000">+234 000 000 0000</a>
+                            <a href="tel:+2348136287422">+234 813 628 7422</a>
+                            <a href="tel:+44 7522546504">+44 752 254 6504</a>
                         </ul>
                     </div>
                 </div>
             </div>
             <hr />
-            <p class="new__footer__helper">Obudu Delight. All Rights Reserved. &copy; 2024</p>
+            <p class="new__footer__helper">Obudu Delight Ltd. All Rights Reserved. &copy; 2024</p>
         </div>
     </div>
 </template>

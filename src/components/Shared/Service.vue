@@ -1,11 +1,19 @@
 <script setup>
-const props = defineProps(["title","content"])
+const props = defineProps(["title", "content", "imageFileName"])
+
+const getImageUrl = () => {
+  // This path must be correct for your file
+  return new URL(`../../assets/images/${props.imageFileName}`, import.meta.url);
+}
+
+
 </script>
 
 <template>
     <div class="service">
         <div class="service__header">
-            <img class="service__header--img" src="../../assets/images/plant.avif" alt="">
+            <!-- <img class="service__header--img" src="../../assets/images/plant.avif" alt=""> -->
+            <img class="service__header--img" :src="getImageUrl()" alt="">
         </div>
        <div class="service__body">
         <h4>{{ title }}</h4>
@@ -36,7 +44,7 @@ const props = defineProps(["title","content"])
         }
 
         &__body{
-            padding: 2rem 1.5rem; 
+            padding: 1.5rem 1.5rem; 
             padding-bottom: 2.7rem;
             h4{
                 line-height: 1.6;
