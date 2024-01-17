@@ -38,44 +38,11 @@
 
                             <div class="products__content__grid__item">
                                 <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/product-groundnut.jpg" alt="Groundnut">
-                                </div>
-                                <div class="products__content__grid__item--body">
-                                    <h5>Groundnut</h5>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, minima.</p>
-                                    <button>Order Now</button>
-                                </div>
-                            </div>
-
-                            <div class="products__content__grid__item">
-                                <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/melon-seed-oil.png" alt="Groundnut">
-                                </div>
-                                <div class="products__content__grid__item--body">
-                                    <h5>Melon Seed Oil</h5>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, minima.</p>
-                                    <button>Order Now</button>
-                                </div>
-                            </div>
-
-                            <div class="products__content__grid__item">
-                                <div class="products__content__grid__item--header">
-                                    <img src="../assets/images/mellon-seeds.png" alt="Groundnut">
-                                </div>
-                                <div class="products__content__grid__item--body">
-                                    <h5>Melon Seeds</h5>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, minima.</p>
-                                    <button>Order Now</button>
-                                </div>
-                            </div>
-
-                            <div class="products__content__grid__item">
-                                <div class="products__content__grid__item--header">
                                     <img src="../assets/images/sesame-seed.png" alt="Groundnut">
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Sesame Seed</h5>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, minima.</p>
+                                    <p>LWe process and export the very best of sesame from Nigeria across Europe.</p>
                                     <button>Order Now</button>
                                 </div>
                             </div>
@@ -86,7 +53,40 @@
                                 </div>
                                 <div class="products__content__grid__item--body">
                                     <h5>Sesame Seed Oil</h5>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, minima.</p>
+                                    <p>Quality factory processing and export of Sesame seed oil across America and europe</p>
+                                    <button>Order Now</button>
+                                </div>
+                            </div>
+
+                            <div class="products__content__grid__item">
+                                <div class="products__content__grid__item--header">
+                                    <img src="../assets/images/melon-seed-oil.png" alt="Groundnut">
+                                </div>
+                                <div class="products__content__grid__item--body">
+                                    <h5>Melon Seed Oil</h5>
+                                    <p>We export fresh melon seed oil across Europe.</p>
+                                    <button>Order Now</button>
+                                </div>
+                            </div>
+
+                            <div class="products__content__grid__item">
+                                <div class="products__content__grid__item--header">
+                                    <img src="../assets/images/product-groundnut.jpg" alt="Groundnut">
+                                </div>
+                                <div class="products__content__grid__item--body">
+                                    <h5>Groundnut</h5>
+                                    <p>We export quality goudnuts across Europe in its raw form.</p>
+                                    <button>Order Now</button>
+                                </div>
+                            </div>
+
+                            <div class="products__content__grid__item">
+                                <div class="products__content__grid__item--header">
+                                    <img src="../assets/images/mellon-seeds.png" alt="Groundnut">
+                                </div>
+                                <div class="products__content__grid__item--body">
+                                    <h5>Melon Seeds</h5>
+                                    <p>We export melon seeds, in whatever quantity, to america and Europe</p>
                                     <button>Order Now</button>
                                 </div>
                             </div>
